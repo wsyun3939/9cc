@@ -1,12 +1,11 @@
 CFLAGS=-std=c11 -g -static
 
-chibicc: main.o
-	$(CC) -o $@ $? $(LDFLAGS)
+9cc: 9cc.c
 
-test: chibicc
+test: 9cc
 	./test.sh
 
 clean:
-	rm -f chibicc *.o *~ tmp*
+	rm -f 9cc *.o *~ tmp*
 
 .PHONY: test clean
